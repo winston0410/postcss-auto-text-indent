@@ -43,7 +43,7 @@ describe('postcss-auto-text-indent', function () {
             selectors: ['*'],
             inclusion: true,
             callback: [
-              require('../src/index.js').default
+              require('../src/index.js')
             ]
           }
         ]
