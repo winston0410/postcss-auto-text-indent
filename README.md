@@ -1,5 +1,7 @@
 # PostCSS Sparrow Auto Text Indent
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/cbc6af7af340fa86e009/maintainability)](https://codeclimate.com/github/winston0410/postcss-auto-text-indent/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/cbc6af7af340fa86e009/test_coverage)](https://codeclimate.com/github/winston0410/postcss-auto-text-indent/test_coverage) [![Known Vulnerabilities](https://snyk.io/test/github/winston0410/postcss-auto-text-indent/badge.svg?targetFile=package.json)](https://snyk.io/test/github/winston0410/postcss-auto-text-indent?targetFile=package.json) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/3afb8a2ef9b944f4a8dc1152490b1cea)](https://www.codacy.com/manual/winston0410/postcss-auto-text-indent?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=winston0410/postcss-auto-text-indent&amp;utm_campaign=Badge_Grade)
+
 A PostCSS Sparrow plugin that helps you append `text-indent` to a selector when `letter-spacing` is found, in order to center words correctly.
 
 ```css
