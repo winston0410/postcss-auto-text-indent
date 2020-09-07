@@ -9,7 +9,7 @@ const commonjs = require('@rollup/plugin-commonjs')
 export default [{
   input: './src/index.js',
   output: [{
-    // exports: 'named',
+    exports: 'auto',
     file: 'dist/index.esm.js',
     format: 'esm',
     plugins: [
@@ -25,7 +25,7 @@ export default [{
     ]
   },
   {
-    // exports: 'named',
+    exports: 'auto',
     file: 'dist/index.cjs.js',
     format: 'cjs',
     plugins: [
