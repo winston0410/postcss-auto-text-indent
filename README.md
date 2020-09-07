@@ -51,7 +51,7 @@ module.exports = {
           selectors: ['*'],
           inclusion: true,
           callbacks: [
-            require('postcss-auto-text-indent').default
+            require('postcss-sparrow-auto-text-indent').default
           ]
         }
       ]
@@ -81,7 +81,7 @@ module.exports = {
           selectors: ['*'],
           inclusion: true,
           callbacks: [
-            require('postcss-auto-text-indent').default
+            require('postcss-sparrow-auto-text-indent').default
           ]
         }
       ]
