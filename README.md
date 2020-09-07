@@ -50,7 +50,7 @@ module.exports = {
         {
           selectors: ['*'],
           inclusion: true,
-          callback: [
+          callbacks: [
             require('postcss-auto-text-indent')
           ]
         }
@@ -80,7 +80,7 @@ module.exports = {
         {
           selectors: ['*'],
           inclusion: true,
-          callback: [
+          callbacks: [
             require('postcss-auto-text-indent')
           ]
         }
@@ -97,3 +97,7 @@ module.exports = {
   text-indent: 10px;
 }
 ```
+
+## Configuration
+
+No configuration is needed for this plugin. To prevent this plugin from appending `text-indent` to a selector, you should config the `selectors` options of [PostCSS Sparrow](https://www.npmjs.com/package/postcss-sparrow).
