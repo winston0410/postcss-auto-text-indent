@@ -19,7 +19,7 @@ const getValue = R.prop('value')
 
 const setTextIndent = (decl) => R.pipe(
   getValue,
-  (value) => decl.before(`text-indent: ${value}`)
+  (value) => decl.before(`text-indent: ${value};`)
 )(decl)
 
 module.exports = {
