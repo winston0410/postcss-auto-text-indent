@@ -36,7 +36,7 @@ describe('postcss-auto-text-indent', function () {
   })
 
   describe('if letter-spacing is found', function () {
-    it('text-indent with identical value should be appended', async function () {
+    it('text-indent with identical value should be appended', async function (done) {
       const options = {
         transformations: [
           {
@@ -60,6 +60,8 @@ describe('postcss-auto-text-indent', function () {
 
       expect(declCount).to.equal(3)
       expect(declCount).to.be.greaterThan(beforeDeclCount)
+
+      done()
     })
   })
   //
