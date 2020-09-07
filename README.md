@@ -60,7 +60,7 @@ module.exports = {
 }
 ```
 
-##Full Code example
+## Full Code example
 
 ```css
 /* Before transformations */
