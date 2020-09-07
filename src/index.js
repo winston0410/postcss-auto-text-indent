@@ -1,12 +1,12 @@
 // const S = require('sanctuary')
-const R = require('ramda')
+import * as R from 'ramda'
 
-const {
+import {
   isLetterSpacing,
   setTextIndent
-} = require('./utilities/helper.js')
+} from './utilities/helper.js'
 
-module.exports = (decl) => {
+export default (decl) => {
   // return S.when(
   //   S.pipe([
   //     getProp,
