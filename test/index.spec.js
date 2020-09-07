@@ -58,6 +58,7 @@ describe('postcss-auto-text-indent', function () {
 
       const declCount = getDeclCount(result.root.nodes)
 
+      expect(declCount).to.equal(3)
       expect(declCount).to.be.greaterThan(beforeDeclCount)
     })
   })
