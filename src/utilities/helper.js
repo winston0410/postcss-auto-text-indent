@@ -4,29 +4,25 @@
 //
 // const eqlLetterSpacing = S.equals('letter-spacing')
 
-const {
-  prop,
-  equals,
-  pipe
-} = require('ramda')
+import * as R from 'ramda'
 
-const getProp = prop('prop')
+const getProp = R.prop('prop')
 
-const eqlLetterSpacing = equals('letter-spacing')
+const eqlLetterSpacing = R.equals('letter-spacing')
 
-const isLetterSpacing = pipe(
+const isLetterSpacing = R.pipe(
   getProp,
   eqlLetterSpacing
 )
 
-const getValue = prop('value')
+const getValue = R.prop('value')
 
-const setTextIndent = (decl) => pipe(
+const setTextIndent = (decl) => R.pipe(
   getValue,
   (value) => decl.before(`text-indent: ${value};`)
 )(decl)
 
-module.exports = {
+export {
   getValue,
   isLetterSpacing,
   setTextIndent

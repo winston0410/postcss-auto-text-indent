@@ -1,14 +1,12 @@
 // const S = require('sanctuary')
-const {
-  when
-} = require('ramda')
+import * as R from 'ramda'
 
-const {
+import {
   isLetterSpacing,
   setTextIndent
-} = require('./utilities/helper.js')
+} from './utilities/helper.js'
 
-module.exports = (decl) => {
+export default (decl) => {
   // return S.when(
   //   S.pipe([
   //     getProp,
@@ -19,7 +17,7 @@ module.exports = (decl) => {
   //   return x
   // })(decl)
 
-  return when(
+  return R.when(
     isLetterSpacing,
     setTextIndent
   )(decl)
