@@ -2,7 +2,7 @@
   "name": "postcss-sparrow-auto-text-indent",
   "version": "0.1.3",
   "description": "A PostCSS Sparrow plugin that would automatically create text-indent rules for you, when letter-spacing is found.",
-  "main": "./src/index.js",
+  "main": "./dist/index.cjs.js",
   "directories": {
     "test": "test"
   },
