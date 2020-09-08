@@ -11,7 +11,7 @@
     "dist/"
   ],
   "scripts": {
-    "test": "npx mocha",
+    "test": "npx mocha --recursive './test/**/*.js' --require esm",
     "build": "NODE_ENV=production npx rollup -c;"
   },
   "repository": {
