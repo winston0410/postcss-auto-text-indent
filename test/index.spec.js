@@ -42,7 +42,7 @@ describe('postcss-auto-text-indent', function () {
           {
             selectors: ['*'],
             inclusion: true,
-            callback: [
+            callbacks: [
               require('../dist/index.cjs.js')
             ]
           }
@@ -52,6 +52,7 @@ describe('postcss-auto-text-indent', function () {
       const result = await postcss([
         sparrow(options)
       ])
+
         .process(css, {
           from: undefined
         })

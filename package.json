@@ -32,7 +32,7 @@
   "homepage": "https://github.com/winston0410/postcss-auto-text-indent#readme",
   "dependencies": {
     "eslint-plugin-ramda": "^2.5.1",
-    "postcss-sparrow": "^1.0.0",
+    "postcss-sparrow": "^1.0.1",
     "ramda": "^0.27.1",
     "sanctuary": "^3.1.0"
   },
